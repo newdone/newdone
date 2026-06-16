@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Noto Serif SC", "Playfair Display", Georgia, serif;
+  --font-calligraphy: "Ma Shan Zheng", cursive;
+
+  /* Custom Animations for canal waters, boat slides and pulsing steam */
+  --animate-spin-slow: spin 20s linear infinite;
+  --animate-smooth-float: smoothFloat 4s ease-in-out infinite;
+}
+
+@keyframes smoothFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000503;
+  background-image: radial-gradient(circle at center, #032a18 0%, #01130b 50%, #000503 100%);
+  color: #e2f1ea;
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar matching bronze and dark green palette */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #01110a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c28434;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}

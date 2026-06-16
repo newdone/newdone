@@ -1,0 +1,6 @@
+{
+  "name": "端午沧州美食行",
+  "description": "一个端午节沧州美食行主题倒计时网页，融合粽子与大运河元素，采用深绿与古铜配色。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
